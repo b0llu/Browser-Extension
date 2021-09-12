@@ -40,6 +40,16 @@ button {
     border-radius: 10px;
 }
 
+button:hover {
+    background-color: #3e8e41;
+    transition: 0.5s
+}
+
+button:active {
+    background-color: #3e8e41;
+    transform: translateY(1px);
+  }
+
 ul {
     color: white;
     padding: 10px;
