@@ -3,8 +3,8 @@
     padding: 0px;
 }
 
-.root{
-    --primary-color : #34D399;
+.root {
+    --primary-color: #34D399;
 }
 
 
@@ -48,7 +48,7 @@ button:hover {
 button:active {
     background-color: #3e8e41;
     transform: translateY(1px);
-  }
+}
 
 ul {
     color: white;
