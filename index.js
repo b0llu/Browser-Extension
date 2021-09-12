@@ -2,12 +2,17 @@ let myLeads = []
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
+let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 
-
+if (leadsFromLocalStorage) {
+    myLeads = leadsFromLocalStorage
+    renderLeads() // saves the bookmarked tabs even after restart or refresh of page
+}
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
     inputEl.value = "" // creates blank space after input is done
+    localStorage.setItem("myLeads", JSON.stringify(myLeads))
     renderLeads()
 })
 
