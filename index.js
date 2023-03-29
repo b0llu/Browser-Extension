@@ -70,7 +70,7 @@ const text = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vero
     Inventore obcaecati rerum deserunt, laborum dolore aperiam, nisi totam minus repudiandae animi error ex veritatis ullam ad provident facere nemo dignissimos neque fugit sunt dolor, iusto quasi. Officiis, et recusandae?`;
 
 const createJobBtn = document.getElementById("createJobBtn");
-const fillFormBtn = document.getElementById("createJobBtn");
+const fillFormBtn = document.getElementById("fillForm");
 
 createJobBtn.addEventListener("click", () => {
   let list = document.getElementsByClassName(
@@ -92,7 +92,7 @@ createJobBtn.addEventListener("click", () => {
   window.onload = setTimeout(postNewJob, 3000);
 });
 
-fillFormBtn.addEventListener('click', () => {
+fillFormBtn.addEventListener("click", () => {
   let input = document.getElementById("job-title-typeahead-input-ember22");
   input.value = "This is a Job";
 
@@ -101,5 +101,5 @@ fillFormBtn.addEventListener('click', () => {
   );
   startBtn[0].click();
 
-// window.onload = setTimeout(startJobCreation, 3000);
-})
+  // window.onload = setTimeout(startJobCreation, 3000);
+});
